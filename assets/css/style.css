@@ -53,6 +53,16 @@ body {
   padding: 15px;
 }
 
+/* Logo sizing and positioning */
+.brand-logo img {
+  width: 50%;
+  height: auto;
+  position: relative;
+  top: 10px;
+  margin-left: 40px;
+}
+
+
 /* Specific to ingredient search/results page */
 #playlist-covers {
     display: inline-flex;
