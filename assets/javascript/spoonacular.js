@@ -17,7 +17,7 @@
     // Performing an AJAX request with the queryURL
     $.ajax({
       headers: {
-        "X-Mashape-Key": "O8cILmkawTmsh422cdG88s3nvdobp1Mz7E0jsnq3EpxgBPdyg8",
+        "X-Mashape-Key": "5iVaBqg2dSmsh3ksNqyCUBLWYclWp1OHz51jsnTW4KYJJ0O9al",
         "Accept": "application/json"
       },
         url: queryURL,
