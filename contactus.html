@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Compiled and minified CSS from Materialize -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+  <title>Contact | Meal Grooves</title>
+
+</head>
+
+<nav>
+    <div class="nav-wrapper">
+      
+      <a href="index.html" class="brand-logo">
+      <img src="file:///C:/Users/ShaTo/Documents/UCF_BootCamp/ProjectOne/assets/images/mealgrooves-logo-white.svg" class="brand-logo"></img></a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="ingredients.html">Ingredients</a></li>
+        <!-- <li><a href="recipes.html">Recipes</a></li> -->
+        <li><a href="contactus.html">Contact Us</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="ingredients.html">Ingredients</a></li>
+        <!-- <li><a href="recipes.html">Recipes</a></li> -->
+        <li><a href="contactus.html">Contact Us</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="main-container" class="container">
+    <section class="main-section">
+      
+<h3>Contact Us</h3>
+  <div class="row">
+    <form class="col s12" id="contactForm" method="POST" action="http://formspree.io/mealgrooves@gmail.com">
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="first_name" type="text"  class="validate" required="required">
+          <label for="first_name">First Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="last_name" type="text" class="validate" required="required">
+          <label for="last_name">Last Name</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input placeholder="janesmith@email.com" id="email" type="email" class="validate" required="required">
+          <label for="email">Email address</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">mode_edit</i>
+          <textarea id="textarea1" class="materialize-textarea" required="required"></textarea>
+          <label for="textarea1">Your message here:</label>
+        </div>
+      </div>    
+        <a class="waves-effect waves-light btn #b71c1c red darken-4" id="contact-submit"><i class="material-icons left">send</i>Submit</a>               
+    </form>
+  </div>
+
+    </section>
+
+  <footer class="page-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">         
+    <div class="footer-copyright">
+        <div class="container">
+          © 2017 AJAX Bettys            
+        </div>
+    </div>
+  </footer>
+
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+  <!-- JavaScript -->
+  <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+</body>
+
+</html>
