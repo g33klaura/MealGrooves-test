@@ -142,5 +142,10 @@ $(document).ready(function() {
   });
   // ^^Closes search-submit on-click
 
+  // Form clear for contact us page
+  $("#contact-submit").on("click", function(){
+      $("#contactForm").trigger("reset");
+  });
+
 });
   // ^^Closes doc ready
