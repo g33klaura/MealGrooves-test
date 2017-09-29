@@ -77,18 +77,22 @@ h1, h3 {
   background-color: rgba(255, 253, 248, .6);
 }
 
+#imageFood {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /* For recipe cards from Heather's page */
-.card, .card-content
-      {
-      float: left;
-      display: inline-block;
-      border-style: none;
-      padding: 0px;
-      font-weight: 600;
-      }
+.card, .card-content {
+  float: left;
+  display: inline-block;
+  border-style: none;
+  padding: 0px;
+  font-weight: 600;
+}
 .card-title {
-      font-weight:800;
-      }
+  font-weight:800;
+}
 
 
 @media screen and (max-width: 600px) {
