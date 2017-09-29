@@ -17,7 +17,7 @@
     // Performing an AJAX request with the queryURL
     $.ajax({
       headers: {
-        "X-Mashape-Key": "5iVaBqg2dSmsh3ksNqyCUBLWYclWp1OHz51jsnTW4KYJJ0O9al",
+        "X-Mashape-Key": "O8cILmkawTmsh422cdG88s3nvdobp1Mz7E0jsnq3EpxgBPdyg8",
         "Accept": "application/json"
       },
         url: queryURL,
@@ -39,10 +39,11 @@
               // ^^^Wondering if this work better as just "<div>", then a separate .addClass for "card-content light-blue" #lcb
 
         // Creating and storing an image tag
+        // var recipeImage = $("<img width=100px height=auto>");
         var recipeImage = $("<img width=250px height=auto>");
 
         //this adds the class food to all images
-        recipeImage.addClass("food");
+        recipeImage.addClass("food card-image");
 
         // Setting the src attribute of the image to a property pulled off the result item
         recipeImage.attr("src", response[i].image);
@@ -56,7 +57,7 @@
         recipeDiv.append(recipeImage);
         recipeDiv.append(recTitle);
 
-        var recipeCard = $("<div class='card'>").append(recipeDiv)
+        var recipeCard = $("<div class='card small'>").append(recipeDiv)
                 
         // display the recipe image to the html
         $("#imageFood").append(recipeCard);
@@ -94,6 +95,8 @@ $(document).ready(function() {
       method: "GET"
     }).done(function(data) {
 
+      // *******CLEAR FOR DETAIL CARD HERE
+      $("#recipe-detail").html("");
       // $("#imageFood").html("");
       $("#userDir").text("");
     
@@ -106,7 +109,7 @@ $(document).ready(function() {
 
       var recipeDetailDiv = $("<div class='card-content'>");
       var recipeClicked = $("<img width=300px height=auto>");
-      var recipeImage = $("<img width=250px height=auto>");
+      var recipeImage = $("<img class='card-image' width=250px height=auto>");
       
       //this adds the class food to all images
       recipeImage.addClass("food");
@@ -114,7 +117,7 @@ $(document).ready(function() {
       // Setting the src attribute of the image to a property pulled off the result item
       recipeImage.attr("src", data.image);
         
-      var recTitle = $("<span class='card-title'>").text(data.title);
+      var recTitle = $("<span class='card-title'>").html(data.title);
       var ingredientList = "";
       
       for (i in data.extendedIngredients) {
@@ -123,10 +126,10 @@ $(document).ready(function() {
       };
       // ^^Added semi-colon here #lcb
 
-      var ingredList = $("<p>").html("Ingredients: " + ingredientList);
-      var timeToMake = $("<p>").text("Total Time: " + data.readyInMinutes);
-      var servings = $("<p>").text("Serving Size: " + data.servings);
-      var directions = $("<p>").text( data.instructions);
+      var ingredList = $("<p>" + "<br>").html("Ingredients: " + ingredientList);
+      var timeToMake = $("<p>" + "<br>").text("Total Time: " + data.readyInMinutes);
+      var servings = $("<p>" + "<br>").text("Serving Size: " + data.servings);
+      var directions = $("<p>" + "<br>").text( data.instructions);
       
       //setting the src attribute to multiple properties pulled off the data from JSON
       // recipeClicked.addClass("img", recipe);
@@ -139,7 +142,7 @@ $(document).ready(function() {
       recipeDetailDiv.append(servings);
       recipeDetailDiv.append(directions);
 
-      var recipeDetailCard = $("<div class='card'>").append(recipeDetailDiv);
+      var recipeDetailCard = $("<div class='card s6'>").append(recipeDetailDiv);
         
       $("#recipe-detail").append(recipeDetailCard);
     });
