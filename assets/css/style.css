@@ -51,9 +51,18 @@ body {
     margin-left: 5px;
 }
 
-/*h1 {
+h1, h3 {
     font-family: 'Pacifico', cursive;
-}*/
+    color: #b71c1c;
+}
+
+#searched {
+    font-family: 'Pacifico', cursive;
+    color: #b71c1c;
+    font-size: 20px;
+    position: relative;
+    top: 10px;
+}
 
 #search-submit {
     font-size: 14px;
