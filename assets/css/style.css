@@ -28,6 +28,43 @@ body {
   display: none;
 }
 
+.form-group {
+  padding: 15px;
+}
+
+/* Logo sizing and positioning */
+.brand-logo img {
+  width: 50%;
+  height: auto;
+  position: relative;
+  top: 10px;
+  margin-left: 40px;
+}
+
+/* Specific to ingredient search/results page */
+#playlist-covers {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.listGif {
+    margin-left: 5px;
+}
+
+/*h1 {
+    font-family: 'Pacifico', cursive;
+}*/
+
+#search-submit {
+    font-size: 14px;
+}
+
+#search-form .row {
+  position: relative;
+  top: 25px;
+}
+
+
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
@@ -48,42 +85,12 @@ body {
     display: block;
     text-align: left;
   }
-
+  .brand-logo img {
+    width: 80%;
+    height: auto;
+    position: relative;
+    top: 8px;
+    margin-left: 40px;
+  }
 }
 
-.form-group {
-  padding: 15px;
-}
-
-/* Logo sizing and positioning */
-.brand-logo img {
-  width: 50%;
-  height: auto;
-  position: relative;
-  top: 10px;
-  margin-left: 40px;
-}
-
-
-/* Specific to ingredient search/results page */
-#playlist-covers {
-    display: inline-flex;
-    flex-wrap: wrap;
-}
-
-.listGif {
-    margin-left: 5px;
-}
-
-h1 {
-    font-family: 'Pacifico', cursive;
-}
-
-#search-submit {
-    font-size: 14px;
-}
-
-#search-form .row {
-  position: relative;
-  top: 25px;
-}
