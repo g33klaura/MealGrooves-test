@@ -57,7 +57,7 @@ h1, h3 {
 }
 
 #searched {
-    font-family: 'Pacifico', cursive;
+    /*font-family: 'Pacifico', cursive;*/
     color: #b71c1c;
     font-size: 20px;
     position: relative;
