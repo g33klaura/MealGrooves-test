@@ -73,6 +73,19 @@ h1, h3 {
   top: 25px;
 }
 
+/* For recipe cards */
+.card, .card-content
+      {
+      float: left;
+      display: inline-block;
+      border-style: none;
+      padding: 0px;
+      font-weight: 600;
+      }
+      .card-title {
+      font-weight:800;
+      }
+
 
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
