@@ -10,24 +10,24 @@
     <!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-    <title>Ingredients | Meal Grooves</title>
+    <title>Ingredients Search | Meal Grooves</title>
 </head>
 <body>
   <nav>
     <div class="nav-wrapper">
-      <a href="#!" class="brand-logo"><img src="assets/images/mealgrooves-logo-white.svg" /></a>
+      <a href="index.html" class="brand-logo"><img src="assets/images/mealgrooves-logo-white.svg" /></a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="index.html">Home</a></li>
         <li><a href="ingredients.html">Ingredients</a></li>
-        <li><a href="recipes.html">Recipes</a></li>
+        <!-- <li><a href="recipes.html">Recipes</a></li> -->
         <li><a href="contactus.html">Contact Us</a></li>
         <li><a href="aboutus.html">About Us</a></li>
       </ul>
       <ul class="side-nav" id="mobile-demo">
         <li><a href="index.html">Home</a></li>
         <li><a href="ingredients.html">Ingredients</a></li>
-        <li><a href="recipes.html">Recipes</a></li>
+        <!-- <li><a href="recipes.html">Recipes</a></li> -->
         <li><a href="contactus.html">Contact Us</a></li>
         <li><a href="aboutus.html">About Us</a></li>
       </ul>
@@ -39,14 +39,14 @@
     <div class="col s12">
       <form id="search-form">
         <div class="row">
-          <div class="input-field col s6 left-align">
+          <div class="input-field col s12 m6 left-align">
             <!-- <h3>Enter Ingredients</h3> -->
             <i class="material-icons prefix">local_dining</i>
             <input placeholder="Search some meals" id="enterIngredients" type="text" name="enterIngredients" class="validate">
             <label for="enterIngredients">Enter your ingredients below: (Separated by comma)</label>
           </div>
 
-          <div class="input-field col s6 right-align">
+          <div class="input-field col s12 m6 right-align">
             <!-- Input music field -->
             <i class="material-icons prefix">music_note</i>
             <input placeholder="Search some grooves" id="music-search" type="text" class="validate" name="music-search">
@@ -58,7 +58,7 @@
         <div class="row">
           <div class="col s12 center-align">
             <!-- Button used to see recipes. -->
-            <button class="waves-effect waves-light btn" id="search-submit"><i class="material-icons left">local_dining</i>See Results</button>
+            <button class="waves-effect waves-light btn red darken-4" id="search-submit"><i class="material-icons left">local_dining</i>See Results</button>
           </div>
         </div> 
       </form>
@@ -92,17 +92,19 @@
       </div>
     </div>
 
+
+
     <div class="row">
-      <div class="col s9 left-align" id="playlist-covers">
-        <!-- Spotify playlist covers render here -->
-      </div>
-    <!-- </div> -->
-    <!-- <div class="row"> -->
-      <div class="col s3" id="player">
+      <div class="col s12 m6" id="player">
         <!-- Spotify web player renders here -->
+      </div>
+
+      <div class="col s12 m6 right-align" id="playlist-covers">
+        <!-- Spotify playlist covers render here -->
       </div>
     </div>
   </div>
+  <!-- ^^Closes results container -->
 
 
 
