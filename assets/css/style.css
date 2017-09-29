@@ -80,3 +80,8 @@ h1 {
 #search-submit {
     font-size: 14px;
 }
+
+#search-form .row {
+  position: relative;
+  top: 25px;
+}
