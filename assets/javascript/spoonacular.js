@@ -57,7 +57,7 @@
         recipeDiv.append(recipeImage);
         recipeDiv.append(recTitle);
 
-        var recipeCard = $("<div class='card small'>").append(recipeDiv)
+        var recipeCard = $("<div class='card medium'>").append(recipeDiv)
                 
         // display the recipe image to the html
         $("#imageFood").append(recipeCard);
