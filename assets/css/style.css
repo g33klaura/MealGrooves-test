@@ -73,7 +73,11 @@ h1, h3 {
   top: 25px;
 }
 
-/* For recipe cards */
+#search-inputs {
+  background-color: rgba(255, 253, 248, .6);
+}
+
+/* For recipe cards from Heather's page */
 .card, .card-content
       {
       float: left;
@@ -82,7 +86,7 @@ h1, h3 {
       padding: 0px;
       font-weight: 600;
       }
-      .card-title {
+.card-title {
       font-weight:800;
       }
 
