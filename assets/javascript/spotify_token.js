@@ -4,6 +4,6 @@
 // VARIABLES ====================
 // 
 
-var authToken = "Bearer BQCbCkbnp40ayaXIe_hWhCmWt3-n4SJPkCRIIQG4nk-E-8UEUB1NHI_pJL22WGn5AqfencfPj_bQxQKeb3rffg";
+var authToken = "Bearer BQBeCPgt87rtKiP9HFyY5fQy14vPmbCV3GeK_klnTk-kZWfudiq_pFXp24sWgV8ZZMbJMVrawR61f7Er-yQAAA";
 // ^^Update this as needed until working on own
-// 10:55pm Wed 9/27
+// 12:53a Fri 9/29
