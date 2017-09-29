@@ -82,6 +82,10 @@ h1, h3 {
   flex-wrap: wrap;
 }
 
+#recipe-detail {
+  max-width: 700px;
+}
+
 /* For recipe cards from Heather's page */
 .card, .card-content {
   float: left;
@@ -92,6 +96,8 @@ h1, h3 {
 }
 .card-title {
   font-weight:800;
+  max-width: 400px;
+  /*^Laura added*/
 }
 
 
