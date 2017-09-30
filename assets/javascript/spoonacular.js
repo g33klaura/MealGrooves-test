@@ -96,8 +96,10 @@ $(document).ready(function() {
     }).done(function(data) {
 
       // *******CLEAR FOR DETAIL CARD HERE
-      $("#recipe-detail").html("");
-      // $("#imageFood").html("");
+      // $("#recipe-detail").html('');
+      // $("#recipe-detail").empty();
+      // $(".card-content").empty();
+
       $("#userDir").text("");
     
       // console.log(data);

@@ -67,6 +67,10 @@ $(document).ready(function() {
 
       // console.log("Submit was clicked!");
 
+    // Empty detailed recipe card on each search
+    $("#recipe-detail").empty();
+
+    // Empty playlist covers on each search
     $("#playlist-covers").empty();
     
     if ($("#music-search").val().length !== 0) {
