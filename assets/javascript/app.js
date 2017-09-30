@@ -57,6 +57,7 @@ $(document).ready(function() {
   $("#textarea1").val("");
   $("#textarea1").trigger("autoresize");
 
+  // Empties div where playlist covers render
   $("#playlist-covers").empty();
 
   // On-click for form submit button
@@ -144,7 +145,14 @@ $(document).ready(function() {
 
   // Form clear for contact us page
   $("#contact-submit").on("click", function(){
-      $("#contactForm").trigger("reset");
+
+    event.preventDefault();
+    console.log("Contact clicked");
+
+    $("#contactForm").trigger("reset");
+    // Script to run modals
+    $("#modal1").modal();
+    $('.modal').modal();
   });
 
 });

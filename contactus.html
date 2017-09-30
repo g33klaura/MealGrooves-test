@@ -68,7 +68,21 @@
           <label for="textarea1">Your message here:</label>
         </div>
       </div>    
-        <a class="waves-effect waves-light btn #b71c1c red darken-4" id="contact-submit"><i class="material-icons left">send</i>Submit</a>               
+        <!-- <a class="waves-effect waves-light btn #b71c1c red darken-4" id="contact-submit"><i class="material-icons left">send</i>Submit</a>  -->
+
+      <!-- Modal Trigger -->
+      <a class="waves-effect waves-light btn modal-trigger btn #b71c1c red darken-4" href="#modal1" id="contact-submit"><i class="material-icons left">send</i>Submit</a>
+
+      <!-- Modal Structure -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h4>Thank you for your submission!</h4>      
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat"></a>
+        </div>
+      </div> 
+
     </form>
   </div>
 
@@ -89,6 +103,10 @@
   </footer>
 
   </div>
+  
+
+  <!-- Link to Firebase js -->  
+  <script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
   
   <!-- jQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
